@@ -27,9 +27,9 @@ function calculate(a, b, operator) {
             return a * b;
         case '/':
             if (b === 0) {
-            throw new Error('Деление на ноль невозможно');
-        }
-        return a / b;
+                throw new Error('Деление на ноль невозможно');
+            }
+            return a / b;
         default:
         throw new Error(`Неподдерживаемый оператор: ${operator}`);
     }
@@ -38,9 +38,12 @@ function calculate(a, b, operator) {
 const context = {};
 const args = [2, 3, '+'];
 
-const result = calculate.apply(context, args);
-console.log(result); 
-
+try {
+    const result = calculate.apply(context, args);
+    console.log(result); 
+} catch (error) {
+    console.log(error.message);
+}
 
 // Задание 8.7.3
 
