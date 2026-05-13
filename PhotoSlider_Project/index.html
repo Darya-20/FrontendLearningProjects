@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="description">
+            <h1 id="description__title">Completed projects</h1>
+            <p id="description__text">
+                Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
+            </p>
+            <div id="parameters">
+                <div class="parameter">
+                    <p class="parameter__title">City:</p>
+                    <p class="parameter__text" id="city"></p>
+                </div>
+                <div class="parameter">
+                    <p class="parameter__title">Apartment area:</p>
+                    <p class="parameter__text" id="area"></p>
+                </div>
+                <div class="parameter">
+                    <p class="parameter__title">Repair time:</p>
+                    <p class="parameter__text" id="repair-time"></p>
+                </div>
+                <div class="parameter">
+                    <p class="parameter__title">Repair Cost:</p>
+                    <p class="parameter__text" id="repair-cost"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="#" data-slide="0">Rostov-on-Don, Admiral</a>
+            <a href="#" data-slide="1">Sochi Thieves</a>
+            <a href="#" data-slide="2">Rostov-on-Don Patriotic</a>
+        </div>
+
+        <div id="slide-navigation">
+            <div class="prev">
+                <img src="images/arrow-left.svg" alt="Previous" class="arrow">
+            </div>
+            <div class="indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+            <div class="next">
+                <img src="images/arrow-right.svg" alt="Next" class="arrow">
+            </div>
+        </div>
+        
+        <div class="image">
+            <img src="images/Rostov-on-Don_Admiral.png" alt="Photo" class="slide-image">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
