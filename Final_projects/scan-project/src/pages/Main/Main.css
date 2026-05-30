@@ -1,0 +1,111 @@
+.main__main {
+    padding: 24px 0 118px;
+}
+
+#hero {
+    width: 100%;
+    height: 620px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 60px 0;
+}
+
+#page-title {
+    width: 57%;
+    font-family: Ferry;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    width: 40%;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+#request-data {
+    width: 335px;
+    height: 59px;
+    border-radius: 5px;
+    background: #5970ff;
+    border: none;
+    color: #ffffff;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 1%;
+}
+
+.hero__image {
+    display: block;
+    width: 629px;
+    height: 620px;
+    position: absolute;
+    right: 0;
+    top: -45px;
+    z-index: -1;
+}
+
+#main__image {
+    width: calc(100% - 51px);
+    height: auto;
+    left: 51px;
+    position: relative;
+    object-fit: contain;
+    margin-top: 70px;
+}
+
+@media (max-width: 400px) {
+    .main {
+        padding: 20px 0 43px 14px;
+    }
+    #hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 56px;
+    }
+    #page-title {
+        width: 100%;
+        font-size: 28px;
+        margin-bottom: 19px;
+    }
+    .hero__text {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+    #request-data {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    .hero__image {
+        display: block;
+        width: 347px;
+        height: 342px;
+        position: relative;
+        right: auto;
+        top: auto;
+        z-index: 0;
+    }
+    #main__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: left;
+        margin: 80px 0;
+        left: 0;
+    }
+}

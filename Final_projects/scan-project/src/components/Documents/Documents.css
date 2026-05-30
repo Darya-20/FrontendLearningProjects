@@ -1,0 +1,224 @@
+.page-subtitle {
+    font-family: Ferry;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 2%;
+}
+
+#documents {
+    display: flex;
+    flex-direction: column;
+}
+
+#documents .page-subtitle {
+    margin: 57px 0 34px;
+}
+
+.documents__links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+}
+
+.document {
+    max-width: calc(50% - 19px);
+    height: 694px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #00000033;
+    border: none;
+    position: relative;
+    padding: 19px 30px 35px;
+}
+
+.document__date {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #949494;
+    margin-right: 14px;
+}
+
+.document__source {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #949494;
+}
+
+.document__title {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    margin-top: 24px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.document__tag {
+    width: 157px;
+    height: 22px;
+    border-radius: 5px;
+    background: #ffb64f;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    margin: 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.document__image {
+    max-width: 100%;
+    height: 158px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.document__text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    opacity: 0.5;
+    margin: 20px 0 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.document__btn-read {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 223px;
+    height: 46.53913116455078px;
+    border-radius: 5px;
+    border: none;
+    background: #7ce3e1;
+    text-decoration: none;
+    color: #000000;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+}
+
+.document__words {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #949494;
+    position: absolute;
+    bottom: 35px;
+    right: 30px;
+}
+
+.btn-more {
+    width: 305px;
+    height: 59px;
+    opacity: 1;
+    border-radius: 5px;
+    border: none;
+    background: #5970ff;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: #ffffff;
+    margin: 38px auto 0;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .page-subtitle {
+        font-size: 28px;
+        letter-spacing: 1%;
+    }
+    #documents {
+        padding-right: 24px;
+    }
+    #documents .page-subtitle {
+        margin: 107px 0 58px;
+    }
+    .documents__links {
+        gap: 20px;
+    }
+    .document {
+        max-width: 100%;
+        padding: 19px 14px 18px 24px;
+    }
+    .document__date {
+        font-size: 14px;
+        letter-spacing: 1%;
+        margin-right: 9px;
+    }
+    .document__source {
+        font-size: 14px;
+        letter-spacing: 1%;
+    }
+    .document__title {
+        font-size: 19px;
+        letter-spacing: 1%;
+        margin-top: 21px;
+    }
+    .document__tag {
+        width: 132px;
+        height: 20px;
+        font-size: 10px;
+        letter-spacing: 1%;
+        margin: 20px 0 13px;
+    }
+    .document__text {
+        font-size: 12px;
+        letter-spacing: 1%;
+        margin: 18px 0 25px;
+    }
+    .document__btn-read {
+        width: 195px;
+        height: 40.69565200805664px;
+        font-size: 14px;
+        letter-spacing: 1%;
+        bottom: 18px;
+        left: 24px;
+    }
+    .document__words {
+        font-size: 14px;
+        letter-spacing: 0%;
+        bottom: 18px;
+        right: 14px;
+    }
+    .btn-more {
+        width: 100%;
+        font-size: 20px;
+        letter-spacing: 3%;
+        margin-top: 36px;
+    }
+}

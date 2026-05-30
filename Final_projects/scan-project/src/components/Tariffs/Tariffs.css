@@ -1,0 +1,222 @@
+.page-subtitle {
+    font-family: Ferry;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin-top: 107px;
+    margin-bottom: 70px;
+    margin-right: auto;
+}
+
+.tariffs {
+    padding: 0 60px;
+}
+
+.tariff-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 37.5px;
+}
+
+.tariff-card {
+    width: 415px;
+    height: 540px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px 0px #00000033;
+}
+
+.tariff-card.current {
+    border: 2px solid var(--tariff-border-color);
+}
+
+.tariff__name {
+    width: 100%;
+    height: 132px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px 30px 0;
+    position: relative;
+}
+
+.tariff__title {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin-bottom: 10px;
+}
+
+.tariff__subtitle {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    position: relative;
+    z-index: 1;
+}
+
+.tariff__image {
+    position: absolute;
+    top: 11px;
+    right: 5px;
+}
+
+.tariff__description {
+    padding: 33px 30px 24px;
+    position: relative;
+}
+
+#tariff-current {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 134px;
+    height: 24px;
+    border-radius: 10px;
+    background: #3ba5e0;
+    color: #ffffff;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tariff__price-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-discount {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin-right: 19px;
+}
+
+.price-total {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.tariff__price-instalment {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 1%;
+}
+
+.tariff__services {
+    margin: 59px 0 55px;
+}
+
+.services {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin-bottom: 10px;
+}
+
+.services-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 5px;
+}
+
+.service::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../images/check_mark.svg');
+    background-size: cover;
+}
+
+.btn-detailed {
+    width: 100%;
+    height: 59px;
+    border-radius: 5px;
+    border: none;
+    background: #5970ff;
+    color: #ffffff;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 1%;
+}
+
+.btn-detailed.current {
+    background: #d2d2d2;
+    color: #000000;
+}
+
+@media (max-width: 400px) {
+    .page-subtitle {
+        font-size: 28px;
+        margin-bottom: 37px;
+        margin-top: 0;
+    }
+    .tariff-cards {
+        flex-direction: column;
+        gap: 44.5px;
+    }
+    .tariff-card {
+        width: 335px;
+        height: 512px;
+    }
+    .tariff__name {
+        padding: 30px 24px 0;
+    }
+    .tariff__title {
+        font-size: 20px;
+    }
+    .tariff__description {
+        padding: 33px 24px 30px;
+    }
+    .price-discount {
+        margin-right: 10px;
+    }
+    .tariff__services {
+        margin: 37px 0;
+    }
+    .services {
+        font-size: 18px;
+    }
+    .service {
+        font-size: 16px;
+    }
+    .btn-detailed {
+        font-size: 18px;
+    }
+}

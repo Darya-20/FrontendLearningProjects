@@ -1,0 +1,354 @@
+.main {
+    position: relative;
+}
+
+#search__page-title {
+    font-family: Ferry;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    padding-left: 60px;
+    width: 57%;
+    margin: 69px 0 25px;
+}
+
+.search__text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    padding-left: 60px;
+    width: 37%;
+}
+
+#search {
+    width: 872px;
+    height: 543px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #00000033;
+    margin: 47px 0 64px 53px;
+    padding: 21px 0 32px 44px;
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    position: relative;
+}
+
+.form-group.input,
+.form-group.select {
+    width: 242px;
+}
+
+.form-group.input {
+    margin-bottom: 30px;
+}
+
+.form-group.select {
+    margin-bottom: 21px;
+}
+
+.form-input,
+.form-select {
+    width: 242px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 0px 20px 0px #0000000d;
+}
+
+.form-input::placeholder {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.form-date,
+.date-input-wrapper {
+    width: 176px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 0px 20px 0px #0000000d;
+}
+
+.date-inputs-container {
+    width: 372px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-input,
+.form-select,
+.form-date,
+.form-select option {
+    padding: 13px 17px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+}
+
+.form-group__name {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    white-space: nowrap;
+}
+
+.required-field {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 3%;
+}
+
+.required-field.error {
+    color: #ff5959;
+}
+
+.form-input.error {
+    border: 1px solid #ff5959;
+    box-shadow: 0px 0px 10px 0px #ff595933;
+    color: #ff5959;
+}
+
+.error-message {
+    position: absolute;
+    width: 100%;
+    height: 17px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    color: #ff5959;
+    text-align: center;
+    bottom: -23px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.error-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#filters-checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 406px;
+    height: 244px;
+    position: absolute;
+    top: 36px;
+    right: 37px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #ffffff;
+}
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    flex-shrink: 0;
+}
+
+.checkbox-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #000000;
+}
+
+.custom-checkbox:not(:checked) ~ .checkbox-text,
+.custom-checkbox:not(:checked) {
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.custom-checkbox:checked ~ .checkbox-text,
+.custom-checkbox:checked {
+    opacity: 1;
+}
+
+.custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    background-image: url('../../images/check_mark.svg');
+    background-size: contain;
+}
+
+#btn-search {
+    width: 305px;
+    height: 59px;
+    border-radius: 5px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #ffffff;
+    background: #5970ff;
+    border: none;
+    position: absolute;
+    right: 39px;
+    bottom: 59px;
+    margin-bottom: 10px;
+}
+
+#btn-search:disabled {
+    opacity: 0.5;
+}
+
+.note {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #949494;
+    position: absolute;
+    right: 85px;
+    bottom: 32px;
+    text-align: left;
+}
+
+#main__image-document {
+    position: absolute;
+    width: 91.00005340576172px;
+    height: 111.1182861328125px;
+    top: 132px;
+    left: 65%;
+    z-index: -1;
+}
+
+#main__image-folders {
+    position: absolute;
+    width: 140.60792541503906px;
+    height: 68.39352416992188px;
+    top: 150px;
+    left: 83%;
+    z-index: -1;
+}
+
+#main__image-man_rocket {
+    position: absolute;
+    width: 442.5731201171875px;
+    height: 470.2137451171875px;
+    top: 351px;
+    right: -7px;
+    z-index: -1;
+}
+
+@media (max-width: 400px) {
+    section {
+        width: 100%;
+    }
+    #search__page-title {
+        font-size: 28px;
+        letter-spacing: 1%;
+        padding: 0 14px;
+        width: 100%;
+        margin: 20px 0 19px;
+    }
+    .search__text {
+        width: 80%;
+        font-size: 18px;
+        letter-spacing: 0%;
+        padding-left: 14px;
+    }
+    #search {
+        width: 100%;
+        height: auto;
+        padding: 24px 26px 37px 14px;
+        margin: 21px 0 24px;
+    }
+    .form-group.input,
+    .form-group.select,
+    .form-date,
+    .form-input,
+    .form-select {
+        width: 100%;
+    }
+    .form-group.input {
+        margin-bottom: 21px;
+    }
+    .date-inputs-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    #filters-checkbox {
+        display: none;
+    }
+    #btn-search {
+        width: 100%;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 40px;
+    }
+    .note {
+        width: 100%;
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
+    #main__image-document {
+        width: 58.24211502075195px;
+        height: 71.1182861328125px;
+        top: 117px;
+        left: 77.6%;
+    }
+    #main__image-folders {
+        display: none;
+    }
+    #main__image-man_rocket {
+        width: calc(100% - 36px);
+        height: 403.27911376953125px;
+        left: 36px;
+        margin-bottom: 25px;
+        position: relative;
+        top: auto;
+        right: auto;
+        z-index: 0;
+        object-fit: cover;
+        object-position: left;
+    }
+}

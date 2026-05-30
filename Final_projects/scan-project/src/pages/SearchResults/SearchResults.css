@@ -1,0 +1,55 @@
+main {
+    position: relative;
+    padding: 69px 60px 109px;
+}
+
+#results__page-title {
+    font-family: Ferry;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    position: relative;
+}
+
+.text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    margin: 36px 0 127px;
+}
+
+#woman-darts {
+    width: 552.5575561523438px;
+    max-width: 100%;
+    height: auto;
+    top: 25px;
+    right: 103px;
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 25px 0 57px 14px;
+    }
+    #results__page-title {
+        font-size: 28px;
+        letter-spacing: 1%;
+    }
+    .text {
+        font-size: 18px;
+        letter-spacing: 0%;
+        margin: 21px 0;
+    }
+    #woman-darts {
+        width: calc(100% - 18px);
+        height: auto;
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 0 59px 4px;
+    }
+}
